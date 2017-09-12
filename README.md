@@ -14,9 +14,7 @@ Summary: Python library for data.world
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/datadotworld-py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/datadotworld-py-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/datadotworld-py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/datadotworld-py-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/datadotworld-py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/datadotworld-py-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/datadotworld-py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/datadotworld-py-feedstock)
 
 Current release info
 ====================
