@@ -16,8 +16,9 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   entry_points:
-    - dw=datadotworld.cli:cli
+    - dw = datadotworld.cli:cli
 
   number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
@@ -61,6 +62,7 @@ about:
   license_family: Apache
   summary: 'Python library for data.world'
   dev_url: http://github.com/datadotworld/data.world-py
+  doc_url: https://github.com/datadotworld/data.world-py
 
 extra:
   recipe-maintainers:
