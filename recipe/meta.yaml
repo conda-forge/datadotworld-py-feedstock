@@ -1,9 +1,9 @@
 {% set conda_name = "datadotworld-py" %}
 {% set name = "datadotworld" %}
-{% set version = "1.2.5" %}
+{% set version = "1.5.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "484eaed3e44563274634daf67d134268668fa08fd4b7e72b1a151fe24ca5f531" %}
+{% set hash = "b01a379f6db93b6101ed8fd01bf99aa505128212f88b4d1ba484cf09c7caa96f" %}
 {% set build = 0 %}
 
 package:
@@ -34,12 +34,12 @@ requirements:
     - certifi >=2017.04.17
     - click >=6.0,<7.0a
     - configparser >=3.5.0,<4.0a  # [py<34]
-    - datapackage-py >=0.8.8,<1.0a
+    - datapackage >=0.8.8,<1.0a
     - jsontableschema >=0.10.0,<1.0a
     - python-dateutil >=2.6.0,<3.0a
     - requests >=2.0.0,<3.0a
     - six >=1.5.0,<2.0a
-    - tabulator-py <2.0a
+    - tabulator <1.4.1
     - urllib3 >=1.15,<2.0a
     - pandas <1.0a
 
