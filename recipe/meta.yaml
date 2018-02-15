@@ -1,9 +1,9 @@
 {% set conda_name = "datadotworld-py" %}
 {% set name = "datadotworld" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "b01a379f6db93b6101ed8fd01bf99aa505128212f88b4d1ba484cf09c7caa96f" %}
+{% set hash = "4d3c8a1306e05f08b46384cc0c4a86140ce1efab4e717cf363ead9f18824de72" %}
 {% set build = 0 %}
 
 package:
