@@ -34,14 +34,15 @@ requirements:
     - certifi >=2017.04.17
     - click >=6.0,<7.0a
     - configparser >=3.5.0,<4.0a  # [py<34]
-    - datapackage-py >=0.8.8,<1.0a
-    - jsontableschema >=0.10.0,<1.0a
+    - datapackage >=1.6.2,<2.0a
+    - tableschema >=1.5.2,<2.0a
     - python-dateutil >=2.6.0,<3.0a
     - requests >=2.0.0,<3.0a
     - six >=1.5.0,<2.0a
-    - tabulator-py <2.0a
+    - tabulator-py >=1.22.0,<2.0a
     - urllib3 >=1.15,<2.0a
-    - pandas <1.0a
+    - numpy <=1.17
+    - pandas <0.25
 
 test:
   imports:
@@ -67,5 +68,5 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
-    - rflprr
-    - andela-gokerayi
+    - markmarkoh
+    - laconc
