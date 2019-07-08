@@ -4,7 +4,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "bf9d44e8c0a9a44c31f1b6663609ea6b9c9e02fc59ee81fc4442bf36dfa75de6" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ conda_name }}
