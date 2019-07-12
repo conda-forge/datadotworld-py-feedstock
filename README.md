@@ -116,7 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@andela-gokerayi](https://github.com/andela-gokerayi/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
-* [@rflprr](https://github.com/rflprr/)
+* [@markmarkoh](https://github.com/markmarkoh/)
+* [@laconc](https://github.com/laconc/)
 
