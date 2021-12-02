@@ -2,9 +2,8 @@
 {% set name = "datadotworld" %}
 {% set version = "1.7.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
 {% set hash = "bf9d44e8c0a9a44c31f1b6663609ea6b9c9e02fc59ee81fc4442bf36dfa75de6" %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 package:
   name: {{ conda_name }}
@@ -13,17 +12,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   entry_points:
     - dw = datadotworld.cli:cli
 
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pytest-runner >=2.11,<3.0a
