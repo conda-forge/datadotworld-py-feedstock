@@ -19,8 +19,8 @@ build:
 
 requirements:
   host:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
     - pytest-runner >=2.11,<3.0a
 
   run:
@@ -28,7 +28,7 @@ requirements:
     - click >=6.0,<7.0a
     - configparser >=3.5.0,<4.0a
     - datapackage >=1.6.2,<2.0a
-    - python
+    - python >=3.6
     - python-dateutil >=2.6.0,<3.0a
     - requests >=2.0.0,<3.0a
     - six >=1.5.0,<2.0a
