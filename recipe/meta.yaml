@@ -1,25 +1,21 @@
 {% set conda_name = "datadotworld-py" %}
 {% set name = "datadotworld" %}
-{% set version = "1.7.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash = "bf9d44e8c0a9a44c31f1b6663609ea6b9c9e02fc59ee81fc4442bf36dfa75de6" %}
-{% set build = 2 %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ conda_name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: bf9d44e8c0a9a44c31f1b6663609ea6b9c9e02fc59ee81fc4442bf36dfa75de6
 
 build:
   entry_points:
     - dw = datadotworld.cli:cli
-
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -28,28 +24,21 @@ requirements:
     - pytest-runner >=2.11,<3.0a
 
   run:
-    - python
     - certifi >=2017.04.17
     - click >=6.0,<7.0a
-    - configparser >=3.5.0,<4.0a  # [py<34]
+    - configparser >=3.5.0,<4.0a
     - datapackage >=1.6.2,<2.0a
-    - tableschema >=1.5.2,<2.0a
+    - python
     - python-dateutil >=2.6.0,<3.0a
     - requests >=2.0.0,<3.0a
     - six >=1.5.0,<2.0a
-    - tabulator >=1.22.0,<2.0a
+    - tableschema >=1.5.2,<2.0a
+    - tabulator >=1.22.0
     - urllib3 >=1.15,<2.0a
-    - numpy <=1.17
-    - pandas <0.25
 
 test:
   imports:
     - datadotworld
-    - datadotworld.client
-    - datadotworld.client._swagger
-    - datadotworld.client._swagger.apis
-    - datadotworld.client._swagger.models
-    - datadotworld.models
 
   commands:
     - dw --help
