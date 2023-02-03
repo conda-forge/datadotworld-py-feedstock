@@ -1,6 +1,6 @@
 {% set conda_name = "datadotworld-py" %}
 {% set name = "datadotworld" %}
-{% set version = "1.8.0" %}
+{% set version = "1.8.4" %}
 
 package:
   name: {{ conda_name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: de42f3f8e2d17192fb4b0cceea888c60ecc35e4e51b2c19233ce9a4a0aa62439
+  sha256: 5c481a39763d0919ececebd071ceb6710760e0ea2a3f9931e29196c42db24cd7
 
 build:
   entry_points:
@@ -48,7 +48,7 @@ about:
   license_file: LICENSE.txt
   license: Apache 2.0
   license_family: Apache
-  summary: 'Python library for data.world'
+  summary: Python library for data.world
   dev_url: http://github.com/datadotworld/data.world-py
   doc_url: https://github.com/datadotworld/data.world-py
 
